@@ -1,4 +1,4 @@
-BOX=vagrant-netbsd-cpp.box
+BOX=vagrant-minix-cpp.box
 
 .PHONY: launch-vm clean-vm clean-boxes clean-vagrant-metadata
 
