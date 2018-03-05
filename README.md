@@ -1,19 +1,16 @@
-# vagrant-minix-cpp: a Vagrant box for building C/C++ binaries for MINIX
-
-# ABOUT
-
-vagrant-minix-cpp is a placeholder for a Vagrant box having a C/C++ compiler. In fact, MINIX (at least minix_R3.4.0rc6) includes `clang` by default, so users may wish to leverage the [mcandre/minix](https://app.vagrantup.com/mcandre/boxes/minix) base box instead.
+# vagrant-minix-cpp: a Vagrant box for building C/C++ binaries for NetBSD
 
 # VAGRANT CLOUD
 
-https://app.vagrantup.com/mcandre/boxes/vagrant-minix-cpp
+https://app.vagrantup.com/mcandre/boxes/vagrant-netbsd-cpp
 
 # EXAMPLE
 
 ```console
+$ cd test
 $ vagrant up
 $ vagrant ssh -c "cd /vagrant && clang++ -o hello hello.cpp && ./hello"
-Hello World!
+...
 ```
 
 # RUNTIME REQUIREMENTS
@@ -34,5 +31,5 @@ Hello World!
 # EXPORT
 
 ```console
-$ make vagrant-minix-cpp.box
+$ make vagrant-netbsd-cpp.box
 ```
