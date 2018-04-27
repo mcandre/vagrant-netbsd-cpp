@@ -2,15 +2,16 @@
 
 # VAGRANT CLOUD
 
-https://app.vagrantup.com/mcandre/boxes/vagrant-netbsd-cpp
+* https://app.vagrantup.com/mcandre/boxes/vagrant-netbsd-cpp-amd64
+* https://app.vagrantup.com/mcandre/boxes/vagrant-netbsd-cpp-i386
 
 # EXAMPLE
 
 ```console
-$ cd test
+$ cd amd64/test
 $ vagrant up
 $ vagrant ssh -c "cd /vagrant && clang++ -o hello hello.cpp && ./hello"
-...
+Hello World!
 ```
 
 # RUNTIME REQUIREMENTS
@@ -31,5 +32,6 @@ $ vagrant ssh -c "cd /vagrant && clang++ -o hello hello.cpp && ./hello"
 # EXPORT
 
 ```console
-$ make vagrant-netbsd-cpp.box
+$ sh -c "cd amd64 && make vagrant-netbsd-cpp-amd64.box"
+$ sh -c "cd i386 && make vagrant-netbsd-cpp-i386.box"
 ```
