@@ -1,4 +1,4 @@
-# vagrant-minix-cpp: a Vagrant box for building C/C++ binaries for NetBSD
+# vagrant-netbsd-cpp: a Vagrant box for building C/C++ binaries for NetBSD
 
 # VAGRANT CLOUD
 
